@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,6 +62,20 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				team1: {
+					DEFAULT: '#7e69ab',
+					light: '#9b87f5',
+					dark: '#6E59A5',
+				},
+				team2: {
+					DEFAULT: '#0EA5E9',
+					light: '#38BDF8',
+					dark: '#0284C7',
+				},
+				gaming: {
+					bg: '#1A1F2C',
+					accent: '#8B5CF6',
 				}
 			},
 			borderRadius: {
@@ -84,11 +99,25 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'fade-in': {
+					'0%': { opacity: '0', transform: 'translateY(10px)' },
+					'100%': { opacity: '1', transform: 'translateY(0)' }
+				},
+				'bounce-in': {
+					'0%': { opacity: '0', transform: 'scale(0.8)' },
+					'70%': { transform: 'scale(1.05)' },
+					'100%': { opacity: '1', transform: 'scale(1)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.5s ease-out',
+				'bounce-in': 'bounce-in 0.5s ease-out'
+			},
+			fontFamily: {
+				gaming: ['Orbitron', 'sans-serif']
 			}
 		}
 	},
